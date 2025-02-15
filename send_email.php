@@ -2,7 +2,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'vendor/autoload.php'; // PHPMailer එක require කරන්න
+require 'vendor/autoload.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = htmlspecialchars($_POST["name"]);
@@ -13,18 +13,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail = new PHPMailer(true);
 
     try {
-        // SMTP Server Configurations
+        // SMTP Configurations
         $mail->isSMTP();
-        $mail->Host = 'aspmx.l.google.com'; // Gmail සඳහා SMTP Server
+        $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'jayanthasathsara20@gmail.com'; // ඔබේ email එක
-        $mail->Password = 'codn eiim whvs znow'; // App Password එක
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Username = 'jayanthasathsara20@gmail.com';
+        $mail->Password = 'codn eiim whvs znow'; // Update with App Password
+        $mail->SMTPSecure = 'tls'; // Correct encryption method
         $mail->Port = 587;
 
         // Email Headers
         $mail->setFrom('jayanthasathsara20@gmail.com', 'Sathsara');
-        $mail->addAddress('jayanthasathsara20@gmail.com'); // Receiver Email
+        $mail->addAddress('jayanthasathsara20@gmail.com'); 
         $mail->addReplyTo($email, $name);
 
         // Email Content
@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->send();
         echo "Message sent successfully!";
     } catch (Exception $e) {
-        echo "Failed to send the message. Mailer Error: {$mail->ErrorInfo}";
+        echo "Mailer Error: {$mail->ErrorInfo}";
     }
 }
 ?>
