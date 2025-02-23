@@ -235,13 +235,13 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
-    background-color: rgba(255, 255, 255, 0.1); /* Light Transparent Background */
+    background-color: rgba(0, 0, 0, 0.05); /* Light Gray Background */
     padding: 10px 15px;
     border-radius: 25px;
-    border: 2px solid #000000; /* White Border */
+    border: 2px solid #000; /* Black Border */
     font-size: 14px;
     font-weight: bold;
-    color: #000000; /* White Text */
+    color: #000; /* Black Text */
     width: fit-content;
     transition: 0.3s ease;
 }
