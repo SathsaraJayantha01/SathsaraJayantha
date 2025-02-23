@@ -238,10 +238,10 @@
     background-color: rgba(255, 255, 255, 0.1); /* Light Transparent Background */
     padding: 10px 15px;
     border-radius: 25px;
-    border: 2px solid #FFFFFF; /* White Border */
+    border: 2px solid #000000; /* White Border */
     font-size: 14px;
     font-weight: bold;
-    color: #FFFFFF; /* White Text */
+    color: #000000; /* White Text */
     width: fit-content;
     transition: 0.3s ease;
 }
