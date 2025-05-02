@@ -1,0 +1,6 @@
+2025-05-02 13:23:31 - Handler Request: POST
+2025-05-02 13:23:31 - Data received: name=Sathsara, email=appzenova5@gmail.com, subject=dsfgds, message=sssssssss...
+2025-05-02 13:23:33 - Mail sent result: Failed
+2025-05-02 13:23:35 - Handler Request: POST
+2025-05-02 13:23:35 - Data received: name=Sathsara, email=appzenova5@gmail.com, subject=dsfgds, message=sssssssss...
+2025-05-02 13:23:37 - Mail sent result: Failed

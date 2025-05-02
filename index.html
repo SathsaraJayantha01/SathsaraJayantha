@@ -570,7 +570,7 @@
                     <h3 class="fw-bold">+94 78 950 1781</h3>
                     <hr class="w-100">
                     <p class="mb-2">Mail me:</p>
-                    <h3 class="fw-bold">sathsarajayantha@myyahoo.com</h3>
+                    <h3 class="fw-bold">sathsarajayantha8@gmail.com</h3>
                     <hr class="w-100">
                     <p class="mb-2">Follow me:</p>
                     <div class="d-flex pt-2">
@@ -582,47 +582,38 @@
                     </div>
                 </div>
                 <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <!--p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p-->
-                    <form action="send_email.php" method="POST">
-                <div class="row g-3">
-                    <!-- Name Field -->
-                    <div class="col-md-6">
-                      <div class="form-floating">
-                       <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
-                       <label for="name">Your Name</label>
-                      </div>
-                    </div>
-
-                    <!-- Email Field -->
-                    <div class="col-md-6">
-                      <div class="form-floating">
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
-                        <label for="email">Your Email</label>
-                      </div>
-                    </div>
-
-                    <!-- Subject Field -->
-                    <div class="col-12">
-                      <div class="form-floating">
-                       <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
-                       <label for="subject">Subject</label>
-                      </div>
-                    </div>
-
-                    <!-- Message Field -->
-                    <div class="col-12">
-                      <div class="form-floating">
-                       <textarea class="form-control" id="message" name="message" placeholder="Leave a message here" style="height: 100px" required></textarea>
-                       <label for="message">Message</label>
-                      </div>
-                    </div>
-
-                    <!-- Submit Button -->
-                    <div class="col-12">
-                      <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
-                    </div>
-                </div>
-                </form>
+                    <form id="contact-form" method="POST" action="handle_contact.php">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                                    <label for="subject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" style="height: 150px" required></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="form-message" class="alert mt-3 d-none"></div>
                 </div>
             </div>
         </div>
@@ -676,6 +667,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 
 </html>
