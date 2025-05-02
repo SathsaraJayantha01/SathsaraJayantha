@@ -46,32 +46,53 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-        <a href="index.html" class="navbar-brand d-block d-lg-none">
-            <h1 class="text-primary fw-bold m-0">Sathsara Jayantha</h1>
+    <nav class="navbar navbar-expand-lg fixed-top py-2 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container">
+        <!-- Mobile Logo -->
+        <a href="index.html" class="navbar-brand d-lg-none">
+            <h1 class="text-primary fw-bold m-0">SJ</h1>
         </a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
+        
+        <!-- Mobile Toggle Button -->
+        <button type="button" class="navbar-toggler border-0 shadow-none" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <i class="fas fa-bars fa-lg text-primary"></i>
         </button>
-        <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+        
+        <!-- Navbar Items -->
+        <div class="collapse navbar-collapse justify-content-between py-3 py-lg-0" id="navbarCollapse">
+            <!-- Left Menu Items -->
             <div class="navbar-nav ms-auto py-0">
                 <a href="#home" class="nav-item nav-link active">Home</a>
                 <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#skill" class="nav-item nav-link">Skills</a> 
+                <a href="#skill" class="nav-item nav-link">Skills</a>
             </div>
-            <a href="index.html" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
-                <h1 class="text-primary fw-bold m-0">Sathsara Jayantha</h1>
-            </a>
+            
+            <!-- Desktop Logo -->
+            <!--a href="index.html" class="navbar-brand bg-gradient-primary py-2 px-4 mx-3 d-none d-lg-block rounded-pill">
+                <h1 class="text-white fw-bold m-0">Sathsara</h1>
+            </a-->
+            
+            <!-- Right Menu Items -->
             <div class="navbar-nav me-auto py-0">
                 <a href="#service" class="nav-item nav-link">Services</a>
                 <a href="#project" class="nav-item nav-link">Projects</a>
-                <!--a href="#team" class="nav-item nav-link">Team</a-->
-                <!--a href="#testimonial" class="nav-item nav-link">Testimonial</a-->
+                <a href="#testimonial" class="nav-item nav-link">Testimonial</a>
                 <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
+            
+            <!-- Social Icons (Visible only on desktop) -->
+            <div class="d-none d-xl-flex align-items-center ms-4">
+                <a href="https://web.facebook.com/SathsaraJayantha01" class="btn btn-sm btn-primary btn-icon rounded-circle me-2">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://github.com/SathsaraJayantha20" class="btn btn-sm btn-primary btn-icon rounded-circle">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
         </div>
-    </nav>
-    <!-- Navbar End -->
+    </div>
+</nav>
+<!-- Navbar End -->
 
 
     <!-- Header Start -->
@@ -79,21 +100,25 @@
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 py-6 pb-0 pt-lg-0">
-                    <h3 class="text-primary mb-3">I'm</h3>
-                    <h1 class="display-3 mb-3">Sathsara Jayantha</h1>
-                    <h2 class="typed-text-output d-inline"></h2>
-                    <div class="typed-text d-none"> Software Developer, UI/UX Designer, Front End Web Developer, Graphic Designer</div>
-                    <div class="d-flex align-items-center pt-5">
-                        <a onclick="downloadPDF()" class="btn btn-primary py-3 px-4 me-5">Download CV</a>
+                    <div class="animated-intro">
+                        <!--span class="badge bg-primary mb-3">Software Developer</span-->
+                        <h1 class="display-3 mb-3 fw-bold text-gradient">Sathsara Jayantha</h1>
+                        <h2 class="typed-text-output d-inline"></h2>
+                        <div class="typed-text d-none">UI/UX Designer, Front End Developer, Graphic Designer, Creative Thinker</div>
+                        <p class="lead mt-3 mb-4">Crafting digital experiences that blend creativity with functionality</p>
+                        <div class="d-flex align-items-center pt-3">
+                            <a href="pdf/Sathsara_Jayantha_CV.pdf" download="Sathsara_Jayantha_CV.pdf" class="btn btn-primary btn-lg rounded-pill py-3 px-5 me-4">
+                                <i class="fas fa-download me-2"></i>Download CV
+                            </a>
+                            <a href="#contact" class="btn btn-outline-dark btn-lg rounded-pill py-3 px-5">Let's Talk</a>
+                        </div>
                     </div>
-                    <script>
-                     function downloadPDF() {
-                       window.location.href = 'Sathsara jayantha CV.pdf'; // Replace 'your-file.pdf' with the actual PDF file path
-                                             }
-                    </script>
                 </div>
                 <div class="col-lg-6">
-                    <img class="img-fluid" src="img/Untitled-145-modified.png" alt="">
+                    <div class="position-relative hero-image-wrapper">
+                        <div class="hero-image-bg"></div>
+                        <img class="img-fluid hero-image" src="img/Untitled-145-modified.png" alt="Sathsara Jayantha">
+                    </div>
                 </div>
             </div>
         </div>
@@ -123,95 +148,182 @@
 
 
     <!-- About Start -->
-    <div class="container-xxl py-6" id="about">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="d-flex align-items-center mb-5">
-                        <div class="years flex-shrink-0 text-center me-4">
-                            <h1 class="display-1 mb-0">01</h1>
-                            <h5 class="mb-0">Years</h5>
+<div class="container-xxl py-6" id="about">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <!-- Left Content Column -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <span class="badge bg-primary mb-2">ABOUT ME</span>
+                <h1 class="display-5 mb-4">Turning Ideas Into Digital Excellence</h1>
+                <p class="lead mb-4">I'm Sathsara Jayantha, a passionate digital creator specialized in web design, UI/UX, and graphic design. With a fresh perspective and technical expertise, I transform concepts into compelling digital experiences.</p>
+                
+                <div class="row g-4 mb-4 about-stats-cards">
+                    <div class="col-sm-6">
+                        <div class="about-stat-card p-4 rounded-3 shadow-sm h-100">
+                            <div class="d-flex align-items-center">
+                                <div class="stat-icon me-3">
+                                    <i class="fas fa-project-diagram"></i>
+                                </div>
+                                <div>
+                                    <h2 class="mb-1 counter-number">5+</h2>
+                                    <p class="mb-0 text-muted">Projects Completed</p>
+                                </div>
+                            </div>
                         </div>
-                        <h3 class="lh-base mb-0">of working experience as a web designer & developer</h3>
                     </div>
-                    <p class="mb-4">Dedicated to delivering innovative web solutions with precision and creativity. Committed to building seamless, user-centric websites that exceed expectations. Driven by a passion for excellence in design, functionality, and performance.</p>
-                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Afordable Prices</p>
-                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>High Quality Product</p>
-                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>On Time Project Delivery</p>
-                    <!--a class="btn btn-primary py-3 px-5 mt-3" onclick="downloadPDF()">Read More</a-->
-					
+                    <div class="col-sm-6">
+                        <div class="about-stat-card p-4 rounded-3 shadow-sm h-100">
+                            <div class="d-flex align-items-center">
+                                <div class="stat-icon me-3">
+                                    <i class="fas fa-smile"></i>
+                                </div>
+                                <div>
+                                    <h2 class="mb-1 counter-number">5+</h2>
+                                    <p class="mb-0 text-muted">Satisfied Clients</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="row g-3 mb-4">
-                        <div class="col-sm-6">
-                            <img class="img-fluid rounded" src="img/about-1.jpg" alt="">
+                
+                <div class="about-features mb-5">
+                    <div class="feature-item mb-3">
+                        <div class="feature-icon-wrap">
+                            <i class="far fa-gem text-primary"></i>
                         </div>
-                        <div class="col-sm-6">
-                            <img class="img-fluid rounded" src="img/about-2.jpg" alt="">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Quality-Focused Approach</h5>
+                            <p class="text-muted mb-0">Delivering premium solutions with meticulous attention to detail</p>
                         </div>
                     </div>
-                    <div class="d-flex align-items-center mb-3">
-                        <h5 class="border-end pe-3 me-3 mb-0">Happy Clients</h5>
-                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">05</h2>
+                    <div class="feature-item mb-3">
+                        <div class="feature-icon-wrap">
+                            <i class="far fa-clock text-primary"></i>
+                        </div>
+                        <div class="ms-4">
+                            <h5 class="mb-1">Timely Delivery</h5>
+                            <p class="text-muted mb-0">Meeting deadlines with efficient project management</p>
+                        </div>
                     </div>
-                    <p class="mb-4">Code should not break or encounter errors, but instead bring solutions to real-world challenges. No bug should persist, no inefficiency should hinder progress; optimize processes and ensure seamless functionality.</p>
-                    <div class="d-flex align-items-center mb-3">
-                        <h5 class="border-end pe-3 me-3 mb-0">Projects Completed</h5>
-                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">05</h2>
+                    <div class="feature-item mb-3">
+                        <div class="feature-icon-wrap">
+                            <i class="far fa-lightbulb text-primary"></i>
+                        </div>
+                        <div class="ms-4">
+                            <h5 class="mb-1">Innovative Solutions</h5>
+                            <p class="text-muted mb-0">Creating modern designs with cutting-edge technologies</p>
+                        </div>
                     </div>
-                    <p class="mb-0">Code should not break or encounter errors, but instead bring solutions to real-world challenges. No bug should persist, no inefficiency should hinder progress; optimize processes and ensure seamless functionality.</p>
+                </div>
+                
+                <div class="d-flex">
+                    <a href="#project" class="btn btn-primary rounded-pill py-3 px-5 me-4">
+                        <i class="fas fa-eye me-2"></i>View Projects
+                    </a>
+                    <a href="https://wa.me/message/ZWCJZ76JDVM6I1" class="btn btn-outline-dark rounded-pill py-3 px-5">
+                        <i class="fab fa-whatsapp me-2"></i>Let's Chat
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Right Image Column -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="about-img-container position-relative">
+                    <!-- Main Image -->
+                    <img src="img/about-1.jpg" alt="About Me" class="img-fluid rounded main-about-img shadow">
+                    
+                    <!-- Experience Badge -->
+                    <div class="experience-badge">
+                        <h3 class="mb-0">1+</h3>
+                        <p class="mb-0">Years Experience</p>
+                    </div>
+                    
+                    <!-- Floating Skill Icons -->
+                    <div class="floating-icon icon-1">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="floating-icon icon-2">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="floating-icon icon-3">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <div class="floating-icon icon-4">
+                        <i class="fab fa-figma"></i>
+                    </div>
+                    
+                    <!-- Testimonial Card -->
+                    <div class="about-testimonial">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left text-primary mb-2"></i>
+                            <p class="mb-2 fst-italic">Code should not just function, but solve real-world challenges with elegance and efficiency.</p>
+                            <div class="d-flex align-items-center pt-2">
+                                <h6 class="mb-0">My Philosophy</h6>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
     <!-- About End -->
 
-
+    
     <!-- Expertise Start -->
-    <!-- Expertise Start -->
-<div class="container-xxl py-6 pb-5" id="skill">
-    <div class="container">
-        <div class="row g-5">
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                <h1 class="display-5 mb-5">Skills & Experience</h1>
-                <p class="mb-4">
-                    Experienced in UI/UX design, graphic design, and front-end web development, 
-                    skilled in creating visually appealing and user-friendly designs. 
-                    Proficient in HTML, CSS, JavaScript, PHP, Adobe Photoshop, Figma, Adobe XD, and WordPress.
-                </p>
-
-                <div class="skills-container">
-                    <div class="skill-badge">
-                        <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML" />
-                        95% HTML, CSS
-                    </div>
-
-                    <div class="skill-badge">
-                        <img src="https://cdn-icons-png.flaticon.com/512/919/919830.png" alt="PHP" />
-                        75% PHP
-                    </div>
-
-                    <div class="skill-badge">
-                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968520.png" alt="Photoshop" />
-                        90% Photoshop
-                    </div>
-
-                    <div class="skill-badge">
-                        <img src="https://cdn-icons-png.flaticon.com/512/174/174881.png" alt="WordPress" />
-                        80% WordPress
-                    </div>
-
-                    <div class="skill-badge">
-                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python" />
-                        85% Python
-                    </div>
-
-                    <div class="skill-badge">
-                        <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C#" />
-                        80% C#
+    <div class="container-xxl py-6 pb-5" id="skill">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <span class="badge bg-primary mb-2">EXPERTISE</span>
+                    <h1 class="display-5 mb-4">Skills & Experience</h1>
+                    <p class="lead mb-4">
+                        Creating exceptional digital experiences through UI/UX design, graphic design, 
+                        and web development with a focus on user-centered solutions.
+                    </p>
+    
+                    <div class="skills-container">
+                        <div class="skill-badge">
+                            <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML" />
+                            <span>HTML/CSS 95%</span>
+                        </div>
+    
+                        <div class="skill-badge">
+                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript" />
+                            <span>JavaScript 85%</span>
+                        </div>
+    
+                        <div class="skill-badge">
+                            <img src="https://cdn-icons-png.flaticon.com/512/919/919830.png" alt="PHP" />
+                            <span>PHP 75%</span>
+                        </div>
+    
+                        <div class="skill-badge">
+                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968520.png" alt="Photoshop" />
+                            <span>Photoshop 90%</span>
+                        </div>
+    
+                        <div class="skill-badge">
+                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="Figma" />
+                            <span>Figma 85%</span>
+                        </div>
+    
+                        <div class="skill-badge">
+                            <img src="https://cdn-icons-png.flaticon.com/512/174/174881.png" alt="WordPress" />
+                            <span>WordPress 80%</span>
+                        </div>
+    
+                        <div class="skill-badge">
+                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python" />
+                            <span>Python 85%</span>
+                        </div>
+    
+                        <div class="skill-badge">
+                            <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C#" />
+                            <span>C# 80%</span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                 <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
@@ -268,389 +380,691 @@
 </div>
 <!-- Expertise End -->
 
-    <!-- Expertise End -->
-
-
     <!-- Service Start -->
-    <div class="container-fluid bg-light my-5 py-6" id="service">
-        <div class="container">
-            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">My Services</h1>
-                </div>
-                <div class="col-lg-6 text-lg-end">
-                    <a class="btn btn-primary py-3 px-5" href="https://wa.me/message/ZWCJZ76JDVM6I1">Hire Me</a>
+<div class="container-fluid service-section my-5 py-6" id="service">
+    <div class="container">
+        <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="col-lg-6">
+                <span class="badge bg-primary mb-2">SERVICES</span>
+                <h1 class="display-5 mb-3">My Expertise</h1>
+                <p class="lead text-muted">Professional solutions tailored to your specific needs</p>
+            </div>
+            <div class="col-lg-6 text-lg-end">
+                <a class="btn btn-primary btn-lg rounded-pill py-3 px-5" href="https://wa.me/message/ZWCJZ76JDVM6I1">
+                    <i class="fab fa-whatsapp me-2"></i>Hire Me
+                </a>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Service Card 1 -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-card bg-white rounded h-100 p-4 p-lg-5">
+                    <div class="service-icon-wrap mb-4">
+                        <div class="service-icon">
+                            <i class="fa fa-crop-alt fa-lg"></i>
+                        </div>
+                    </div>
+                    <h4 class="mb-3">Creative Design</h4>
+                    <div class="service-price mb-4">
+                        <span class="price-tag">Starting at <strong>$5</strong></span>
+                    </div>
+                    <p class="mb-4">We craft innovative and visually striking designs tailored to your brand identity, ensuring a unique and professional aesthetic.</p>
+                    <div class="service-features mb-4">
+                        <div class="feature-item"><i class="fas fa-check text-primary me-2"></i> Brand-focused solutions</div>
+                        <div class="feature-item"><i class="fas fa-check text-primary me-2"></i> Modern design trends</div>
+                        <div class="feature-item"><i class="fas fa-check text-primary me-2"></i> Multiple revision options</div>
+                    </div>
+                    <a href="#contact" class="btn btn-outline-primary rounded-pill">Learn More</a>
                 </div>
             </div>
-            <div class="row g-4">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-crop-alt fa-2x text-dark"></i>
-                        </div>
-                        <div class="ms-sm-4">
-                            <h4 class="mb-3">Creative Design</h4>
-                            <h6 class="mb-3">Start from <span class="text-primary">$5</span></h6>
-                            <span>We craft innovative and visually striking designs tailored to your brand identity, ensuring a unique and professional aesthetic.</span>
+            
+            <!-- Service Card 2 -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-card bg-white rounded h-100 p-4 p-lg-5">
+                    <div class="service-icon-wrap mb-4">
+                        <div class="service-icon">
+                            <i class="fa fa-palette fa-lg"></i>
                         </div>
                     </div>
+                    <h4 class="mb-3">Graphic Design</h4>
+                    <div class="service-price mb-4">
+                        <span class="price-tag">Starting at <strong>$5</strong></span>
+                    </div>
+                    <p class="mb-4">Specializing in eye-catching visuals, we create everything from logos to marketing materials, delivering high-quality graphic solutions.</p>
+                    <div class="service-features mb-4">
+                        <div class="feature-item"><i class="fas fa-check text-primary me-2"></i> Logo & brand identity</div>
+                        <div class="feature-item"><i class="fas fa-check text-primary me-2"></i> Print & digital materials</div>
+                        <div class="feature-item"><i class="fas fa-check text-primary me-2"></i> Social media graphics</div>
+                    </div>
+                    <a href="#contact" class="btn btn-outline-primary rounded-pill">Learn More</a>
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-code-branch fa-2x text-dark"></i>
-                        </div>
-                        <div class="ms-sm-4">
-                            <h4 class="mb-3">Graphic Design</h4>
-                            <h6 class="mb-3">Start from <span class="text-primary">$5</span></h6>
-                            <span>Specializing in eye-catching visuals, we create everything from logos to marketing materials, delivering high-quality graphic solutions.</span>
+            </div>
+            
+            <!-- Service Card 3 -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-card bg-white rounded h-100 p-4 p-lg-5">
+                    <div class="service-icon-wrap mb-4">
+                        <div class="service-icon">
+                            <i class="fa fa-code fa-lg"></i>
                         </div>
                     </div>
+                    <h4 class="mb-3">Web Design</h4>
+                    <div class="service-price mb-4">
+                        <span class="price-tag">Starting at <strong>$5</strong></span>
+                    </div>
+                    <p class="mb-4">Modern, responsive websites designed for seamless user experience and aesthetic appeal, optimized for all devices.</p>
+                    <div class="service-features mb-4">
+                        <div class="feature-item"><i class="fas fa-check text-primary me-2"></i> Responsive design</div>
+                        <div class="feature-item"><i class="fas fa-check text-primary me-2"></i> SEO optimization</div>
+                        <div class="feature-item"><i class="fas fa-check text-primary me-2"></i> Performance focused</div>
+                    </div>
+                    <a href="#contact" class="btn btn-outline-primary rounded-pill">Learn More</a>
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-code fa-2x text-dark"></i>
-                        </div>
-                        <div class="ms-sm-4">
-                            <h4 class="mb-3">Web Design</h4>
-                            <h6 class="mb-3">Start from <span class="text-primary">$5</span></h6>
-                            <span>Modern, responsive websites designed for seamless user experience and aesthetic appeal, optimized for all devices.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-laptop-code fa-2x text-dark"></i>
-                        </div>
-                        <div class="ms-sm-4">
-                            <h4 class="mb-3">UI/UX Design</h4>
-                            <h6 class="mb-3">Start from <span class="text-primary">$5</span></h6>
-                            <span>Intuitive and user-centered design solutions focused on enhancing user interaction and satisfaction with your digital products.</span>
+            </div>
+            
+            <!-- Service Card 4 -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-card bg-white rounded h-100 p-4 p-lg-5">
+                    <div class="service-icon-wrap mb-4">
+                        <div class="service-icon">
+                            <i class="fa fa-laptop-code fa-lg"></i>
                         </div>
                     </div>
+                    <h4 class="mb-3">UI/UX Design</h4>
+                    <div class="service-price mb-4">
+                        <span class="price-tag">Starting at <strong>$5</strong></span>
+                    </div>
+                    <p class="mb-4">Intuitive and user-centered design solutions focused on enhancing user interaction and satisfaction with your digital products.</p>
+                    <div class="service-features mb-4">
+                        <div class="feature-item"><i class="fas fa-check text-primary me-2"></i> User research</div>
+                        <div class="feature-item"><i class="fas fa-check text-primary me-2"></i> Wireframing & prototyping</div>
+                        <div class="feature-item"><i class="fas fa-check text-primary me-2"></i> Usability testing</div>
+                    </div>
+                    <a href="#contact" class="btn btn-outline-primary rounded-pill">Learn More</a>
                 </div>
             </div>
         </div>
     </div>
+</div>
     <!-- Service End -->
 
 
     <!-- Projects Start -->
-    <div class="container-xxl py-6 pt-5" id="project">
-        <div class="container">
-            <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">My Projects</h1>
-                </div>
-                <div class="col-lg-6 text-lg-end">
-                    <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
-                        <li class="mx-3 active" data-filter="*">All Projects</li>
-                        <li class="mx-3" data-filter=".first">UI/UX Design</li>
-                        <li class="mx-3" data-filter=".second">Graphic Design</li>
-                    </ul>
+<div class="container-xxl py-6 pt-5" id="project">
+    <div class="container">
+        <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="col-lg-6">
+                <span class="badge bg-primary mb-2">PORTFOLIO</span>
+                <h1 class="display-5 mb-2">Featured Projects</h1>
+                <p class="lead text-muted">Creative solutions that deliver results</p>
+            </div>
+            <div class="col-lg-6 text-lg-end">
+                <div class="modern-filter-tabs">
+                    <button class="filter-tab active" data-filter="all">All</button>
+                    <button class="filter-tab" data-filter="first">UI/UX</button>
+                    <button class="filter-tab" data-filter="second">Graphic</button>
+                    <button class="filter-tab" data-filter="third">Web</button>
                 </div>
             </div>
-            <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-4 col-md-6 portfolio-item first">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/UI01.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/UI01.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+        </div>
+        
+        <!-- Project Gallery -->
+        <div class="modern-portfolio">
+            <!-- Project Card 1 - UI/UX -->
+            <div class="portfolio-item first" data-category="UI/UX Design">
+                <div class="portfolio-card-modern">
+                    <div class="portfolio-img-container">
+                        <img src="img/UI01.png" alt="UI Design Project">
+                        <div class="project-category">UI/UX</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Travelling Mobile App UI Design</h4>
+                        <p>E-commerce application interface with user-centered approach</p>
+                        <div class="portfolio-actions">
+                            <a href="img/UI01.png" data-lightbox="portfolio" class="action-btn view-btn">
+                                <i class="fa fa-eye"></i>
+                                <span>Preview</span>
+                            </a>
+                            <a href="#" class="action-btn details-btn">
+                                <i class="fa fa-link"></i>
+                                <span>Details</span>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/Post01.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/Post01.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+            </div>
+            
+            <!-- Project Card 2 - Graphic Design -->
+            <div class="portfolio-item second" data-category="Graphic Design">
+                <div class="portfolio-card-modern">
+                    <div class="portfolio-img-container">
+                        <img src="img/Post01.png" alt="Brand Identity Design">
+                        <div class="project-category">Graphic</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Brand Launching Graphic Design</h4>
+                        <p>Complete visual identity Desgins</p>
+                        <div class="portfolio-actions">
+                            <a href="img/Post01.png" data-lightbox="portfolio" class="action-btn view-btn">
+                                <i class="fa fa-eye"></i>
+                                <span>Preview</span>
+                            </a>
+                            <a href="#" class="action-btn details-btn">
+                                <i class="fa fa-link"></i>
+                                <span>Details</span>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/UI03.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/UI03.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+            </div>
+            
+            <!-- Project Card 3 - Web Design -->
+            <div class="portfolio-item third" data-category="Web Design">
+                <div class="portfolio-card-modern">
+                    <div class="portfolio-img-container">
+                        <img src="img/web1.png" alt="Restaurant Website">
+                        <div class="project-category">Web</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Clothing Website</h4>
+                        <p>Responsive design with online cloth ordering system</p>
+                        <div class="portfolio-actions">
+                            <a href="img/web1.png" data-lightbox="portfolio" class="action-btn view-btn">
+                                <i class="fa fa-eye"></i>
+                                <span>Preview</span>
+                            </a>
+                            <a href="#" class="action-btn details-btn">
+                                <i class="fa fa-link"></i>
+                                <span>Details</span>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/Post04.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/Post04.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+            </div>
+            
+            <!-- Project Card 4 - UI/UX -->
+            <div class="portfolio-item first" data-category="UI/UX Design">
+                <div class="portfolio-card-modern">
+                    <div class="portfolio-img-container">
+                        <img src="img/UI04.png" alt="Finance Dashboard UI">
+                        <div class="project-category">UI/UX</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Online Market Store Mobile App UI Design</h4>
+                        <p>Data visualization UI with interactive charts and analytics</p>
+                        <div class="portfolio-actions">
+                            <a href="img/UI04.png" data-lightbox="portfolio" class="action-btn view-btn">
+                                <i class="fa fa-eye"></i>
+                                <span>Preview</span>
+                            </a>
+                            <a href="#" class="action-btn details-btn">
+                                <i class="fa fa-link"></i>
+                                <span>Details</span>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/UI02.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/UI02.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+            </div>
+            
+            <!-- Project Card 5 - Graphic Design -->
+            <div class="portfolio-item second" data-category="Graphic Design">
+                <div class="portfolio-card-modern">
+                    <div class="portfolio-img-container">
+                        <img src="img/Post02.jpg" alt="Marketing Materials">
+                        <div class="project-category">Graphic</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Marketing Materials</h4>
+                        <p>Print and digital campaign with cohesive visual elements</p>
+                        <div class="portfolio-actions">
+                            <a href="img/Post02.jpg" data-lightbox="portfolio" class="action-btn view-btn">
+                                <i class="fa fa-eye"></i>
+                                <span>Preview</span>
+                            </a>
+                            <a href="#" class="action-btn details-btn">
+                                <i class="fa fa-link"></i>
+                                <span>Details</span>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/Post03.jpg" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/Post03.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://qlony.co/login"><i class="fa fa-link"></i></a>
+            </div>
+            
+            <!-- Project Card 6 - Web Design -->
+            <div class="portfolio-item third" data-category="Web Design">
+                <div class="portfolio-card-modern">
+                    <div class="portfolio-img-container">
+                        <img src="img/web2.png" alt="Portfolio Website">
+                        <div class="project-category">Web</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Portfolio Website</h4>
+                        <p>Personal branding site with dynamic content loading</p>
+                        <div class="portfolio-actions">
+                            <a href="img/web2.png" data-lightbox="portfolio" class="action-btn view-btn">
+                                <i class="fa fa-eye"></i>
+                                <span>Preview</span>
+                            </a>
+                            <a href="#" class="action-btn details-btn">
+                                <i class="fa fa-link"></i>
+                                <span>Details</span>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/UI04.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/UI04.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+            </div>
+
+             <!-- Project Card 7 - UI/UX -->
+            <div class="portfolio-item first" data-category="UI/UX Design">
+            <div class="portfolio-card-modern">
+                <div class="portfolio-img-container">
+                    <img src="img/UI02.png" alt="UI Design Project">
+                    <div class="project-category">UI/UX</div>
+                </div>
+                <div class="portfolio-info">
+                    <h4>Music Mobile App UI Design</h4>
+                    <p>E-commerce application interface with user-centered approach</p>
+                    <div class="portfolio-actions">
+                        <a href="img/UI02.png" data-lightbox="portfolio" class="action-btn view-btn">
+                            <i class="fa fa-eye"></i>
+                            <span>Preview</span>
+                        </a>
+                        <a href="#" class="action-btn details-btn">
+                            <i class="fa fa-link"></i>
+                            <span>Details</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+           </div>
+        
+        <!-- Project Card 8 - Graphic Design -->
+           <div class="portfolio-item second" data-category="Graphic Design">
+            <div class="portfolio-card-modern">
+                <div class="portfolio-img-container">
+                    <img src="img/Post03.jpg" alt="Brand Identity Design">
+                    <div class="project-category">Graphic</div>
+                </div>
+                <div class="portfolio-info">
+                    <h4>Different Like Graphic Design</h4>
+                    <p>Complete visual identity Desgins</p>
+                    <div class="portfolio-actions">
+                        <a href="img/Post03.jpg" data-lightbox="portfolio" class="action-btn view-btn">
+                            <i class="fa fa-eye"></i>
+                            <span>Preview</span>
+                        </a>
+                        <a href="#" class="action-btn details-btn">
+                            <i class="fa fa-link"></i>
+                            <span>Details</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+           </div>
+        
+        <!-- Project Card 9 - Web Design -->
+           <div class="portfolio-item third" data-category="Web Design">
+            <div class="portfolio-card-modern">
+                <div class="portfolio-img-container">
+                    <img src="img/UI03.png" alt="Restaurant Website">
+                    <div class="project-category">Web</div>
+                </div>
+                <div class="portfolio-info">
+                    <h4>Clothing Website</h4>
+                    <p>Responsive design with online cloth ordering system</p>
+                    <div class="portfolio-actions">
+                        <a href="img/UI03.png" data-lightbox="portfolio" class="action-btn view-btn">
+                            <i class="fa fa-eye"></i>
+                            <span>Preview</span>
+                        </a>
+                        <a href="#" class="action-btn details-btn">
+                            <i class="fa fa-link"></i>
+                            <span>Details</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>   
+
+        <!-- View More Projects Button -->
+        <div class="text-center mt-5 wow fadeInUp" data-wow-delay="0.3s">
+            <a href="https://github.com/SathsaraJayantha20" class="btn btn-primary py-3 px-5 rounded-pill">
+                <i class="fab fa-github me-2"></i>Explore More Projects
+            </a>
+        </div>
+    </div>
+</div>
+    <!-- Projects End -->
+
+
+<!-- Testimonial Start -->
+<div class="container-xxl py-6 my-6" id="testimonial">
+    <div class="container">
+        <!-- Changed from text-center to text-start for left alignment -->
+        <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="col-lg-6">
+                <span class="badge bg-primary mb-2">TESTIMONIALS</span>
+                <h1 class="display-5 mb-3">Client Feedback</h1>
+                <p class="lead text-muted">Hear what clients have to say about their experience working with me</p>
+            </div>
+            <div class="col-lg-6 text-lg-end">
+                <a class="btn btn-outline-primary rounded-pill py-3 px-5" href="https://wa.me/message/ZWCJZ76JDVM6I1">
+                    <i class="fab fa-whatsapp me-2"></i>Work With Me
+                </a>
+            </div>
+        </div>
+
+        <div class="testimonial-modern-container wow fadeInUp" data-wow-delay="0.3s">
+            <div class="owl-carousel testimonial-carousel">
+                <!-- Testimonial Item 1 -->
+                <div class="testimonial-modern">
+                    <div class="testimonial-modern-content">
+                        <div class="testimonial-modern-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-modern-quote">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <p class="testimonial-modern-text">The team exceeded our expectations! Their creative designs completely transformed our brand image. Highly recommended!</p>
+                        <div class="testimonial-modern-author">
+                            <div class="author-badge">S</div>
+                            <div class="author-info">
+                                <h5>Senaka T.</h5>
+                                <span>Creative Director</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/Post02.jpg" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/Post02.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+                
+                <!-- Testimonial Item 2 -->
+                <div class="testimonial-modern">
+                    <div class="testimonial-modern-content">
+                        <div class="testimonial-modern-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-modern-quote">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <p class="testimonial-modern-text">Their attention to detail in web design is unmatched. Our website now looks professional and performs flawlessly across all devices.</p>
+                        <div class="testimonial-modern-author">
+                            <div class="author-badge">M</div>
+                            <div class="author-info">
+                                <h5>Madhushan R.</h5>
+                                <span>Digital Marketer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial Item 3 -->
+                <div class="testimonial-modern">
+                    <div class="testimonial-modern-content">
+                        <div class="testimonial-modern-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-modern-quote">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <p class="testimonial-modern-text">Their graphic design work was exactly what we needed to elevate our marketing materials. They're true professionals who deliver quality work!</p>
+                        <div class="testimonial-modern-author">
+                            <div class="author-badge">J</div>
+                            <div class="author-info">
+                                <h5>Jagath B.</h5>
+                                <span>Content Creator</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Projects End -->
-
-
-    <!-- Team Start -->
-    <!--div class="container-xxl py-6 pb-5" id="team">
-        <div class="container">
-            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">Team Members</h1>
-                </div>
-                <div class="col-lg-6 text-lg-end">
-                    <a class="btn btn-primary py-3 px-5" href="">Contact Us</a>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item position-relative">
-                        <img class="img-fluid rounded" src="img/team-1.jpg" alt="">
-                        <div class="team-text bg-white rounded-end p-4">
-                            <div>
-                                <h5>Full Name</h5>
-                                <span>Designer</span>
-                            </div>
-                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item position-relative">
-                        <img class="img-fluid rounded" src="img/team-2.jpg" alt="">
-                        <div class="team-text bg-white rounded-end p-4">
-                            <div>
-                                <h5>Full Name</h5>
-                                <span>Designer</span>
-                            </div>
-                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item position-relative">
-                        <img class="img-fluid rounded" src="img/team-3.jpg" alt="">
-                        <div class="team-text bg-white rounded-end p-4">
-                            <div>
-                                <h5>Full Name</h5>
-                                <span>Designer</span>
-                            </div>
-                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div-->
-    <!-- Team End -->
-
-
-    <!-- Testimonial Start -->
-    <!--div class="container-fluid bg-light py-5 my-5" id="testimonial">
-        <div class="container-fluid py-5">
-            <h1 class="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Testimonial</h1>
-            <div class="row justify-content-center">
-                <div class="col-lg-3 d-none d-lg-block">
-                    <div class="testimonial-left h-100">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/testimonial-1.jpg" alt="">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/testimonial-2.jpg" alt="">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="img/testimonial-3.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="owl-carousel testimonial-carousel">
-                        <div class="testimonial-item text-center">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="img/testimonial-1.jpg" alt="">
-                                <div class="testimonial-icon">
-                                    <i class="fa fa-quote-left text-primary"></i>
-                                </div>
-                            </div>
-                            <p class="fs-5 fst-italic">"The team exceeded our expectations! Their creative designs completely transformed our brand image. Highly recommended!"</p>
-                            <hr class="w-25 mx-auto">
-                            <h5>Sarah T.</h5>
-                            <span>Creative Director</span>
-                        </div>
-                        <div class="testimonial-item text-center">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="img/testimonial-2.jpg" alt="">
-                                <div class="testimonial-icon">
-                                    <i class="fa fa-quote-left text-primary"></i>
-                                </div>
-                            </div>
-                            <p class="fs-5 fst-italic">"Their attention to detail in web design is unmatched. Our website now looks professional and performs flawlessly across devices."</p>
-                            <hr class="w-25 mx-auto">
-                            <h5>Michael R.</h5>
-                            <span>Digital Marketer</span>
-                        </div>
-                        <div class="testimonial-item text-center">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="img/testimonial-3.jpg" alt="">
-                                <div class="testimonial-icon">
-                                    <i class="fa fa-quote-left text-primary"></i>
-                                </div>
-                            </div>
-                            <p class="fs-5 fst-italic">"Their graphic design work was exactly what we needed to elevate our marketing materials. They’re true professionals!"</p>
-                            <hr class="w-25 mx-auto">
-                            <h5>John B.</h5>
-                            <span>Content Creator</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 d-none d-lg-block">
-                    <div class="testimonial-right h-100">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/testimonial-1.jpg" alt="">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/testimonial-2.jpg" alt="">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="img/testimonial-3.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div-->
-    <!-- Testimonial End -->
+</div>
+<!-- Testimonial End -->
 
 
     <!-- Contact Start -->
-    <div class="container-xxl pb-5" id="contact">
-        <div class="container py-5">
-            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">Let's Work Together</h1>
-                </div>
-                <div class="col-lg-6 text-lg-end">
-                    <a class="btn btn-primary py-3 px-5" href="https://m.me/SathsaraJayantha01">Say Hello</a>
-                </div>
+<div class="container-xxl pb-5" id="contact">
+    <div class="container py-5">
+        <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="col-lg-6">
+                <span class="badge bg-primary mb-2">CONTACT</span>
+                <h1 class="display-5 mb-0">Let's Work Together</h1>
+                <p class="lead text-muted mt-2">Ready to bring your ideas to life</p>
             </div>
-            <div class="row g-5">
-                <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="mb-2">My office:</p>
-                    <h3 class="fw-bold">Yakkalamulla, Galle, Sri Lanka</h3>
-                    <hr class="w-100">
-                    <p class="mb-2">Call me:</p>
-                    <h3 class="fw-bold">+94 78 950 1781</h3>
-                    <hr class="w-100">
-                    <p class="mb-2">Mail me:</p>
-                    <h3 class="fw-bold">sathsarajayantha8@gmail.com</h3>
-                    <hr class="w-100">
-                    <p class="mb-2">Follow me:</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-primary me-2" href="https://x.com/SJayantha01"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href="https://web.facebook.com/SathsaraJayantha01"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href="https://www.youtube.com/@sathsarajayantha"><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href="https://www.linkedin.com/in/sathsara-jayantha-62b814344/"><i class="fab fa-linkedin-in"></i></a>
-						<a class="btn btn-square btn-primary me-2" href="https://github.com/SathsaraJayantha20"><i class="fab fa-github"></i></a>
+            <div class="col-lg-6 text-lg-end">
+                <a class="btn btn-primary btn-lg rounded-pill py-3 px-5" href="https://m.me/SathsaraJayantha01">
+                    <i class="fab fa-facebook-messenger me-2"></i>Say Hello
+                </a>
+            </div>
+        </div>
+        <div class="row g-5">
+            <!-- Contact Info Column -->
+            <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="contact-info-card bg-white p-4 rounded-3 shadow-sm mb-4">
+                    <div class="d-flex align-items-center">
+                        <div class="contact-icon-wrapper me-3">
+                            <i class="fas fa-map-marker-alt text-primary"></i>
+                        </div>
+                        <div>
+                            <p class="text-muted small mb-1">My office:</p>
+                            <h4 class="fw-bold mb-0">Yakkalamulla, Galle, Sri Lanka</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <form id="contact-form" method="POST" action="handle_contact.php">
+                
+                <div class="contact-info-card bg-white p-4 rounded-3 shadow-sm mb-4">
+                    <div class="d-flex align-items-center">
+                        <div class="contact-icon-wrapper me-3">
+                            <i class="fas fa-phone-alt text-primary"></i>
+                        </div>
+                        <div>
+                            <p class="text-muted small mb-1">Call me:</p>
+                            <h4 class="fw-bold mb-0">+94 78 950 1781</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-info-card bg-white p-4 rounded-3 shadow-sm mb-4">
+                    <div class="d-flex align-items-center">
+                        <div class="contact-icon-wrapper me-3">
+                            <i class="fas fa-envelope text-primary"></i>
+                        </div>
+                        <div>
+                            <p class="text-muted small mb-1">Mail me:</p>
+                            <h4 class="fw-bold mb-0">sathsarajayantha8@gmail.com</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-info-card bg-white p-4 rounded-3 shadow-sm">
+                    <p class="text-muted small mb-3">Follow me:</p>
+                    <div class="modern-social-links">
+                        <a class="social-link twitter" href="https://x.com/SJayantha01">
+                            <span class="social-icon"><i class="fab fa-twitter"></i></span>
+                            <span class="social-name">Twitter</span>
+                        </a>
+                        <a class="social-link facebook" href="https://web.facebook.com/SathsaraJayantha01">
+                            <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
+                            <span class="social-name">Facebook</span>
+                        </a>
+                        <a class="social-link youtube" href="https://www.youtube.com/@sathsarajayantha">
+                            <span class="social-icon"><i class="fab fa-youtube"></i></span>
+                            <span class="social-name">YouTube</span>
+                        </a>
+                        <a class="social-link linkedin" href="https://www.linkedin.com/in/sathsara-jayantha-62b814344/">
+                            <span class="social-icon"><i class="fab fa-linkedin-in"></i></span>
+                            <span class="social-name">LinkedIn</span>
+                        </a>
+                        <a class="social-link github" href="https://github.com/SathsaraJayantha20">
+                            <span class="social-icon"><i class="fab fa-github"></i></span>
+                            <span class="social-name">GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Form Column -->
+            <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="contact-form-card bg-white p-4 p-lg-5 rounded-3 shadow-sm">
+                    <h4 class="mb-4">Send Me A Message</h4>
+                    <form id="contactForm">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
                                     <label for="name">Your Name</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
                                     <label for="email">Your Email</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
                                     <label for="subject">Subject</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" style="height: 150px" required></textarea>
+                                    <textarea class="form-control" placeholder="Message" id="message" style="height: 150px"></textarea>
                                     <label for="message">Message</label>
                                 </div>
                             </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                            <div class="col-12 text-center">
+                                <button class="btn btn-primary btn-lg rounded-pill py-3 px-5" type="submit">
+                                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                                </button>
                             </div>
                         </div>
                     </form>
-                    <div id="form-message" class="alert mt-3 d-none"></div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Contact End -->
+</div>
+<!-- Contact End -->
 
 
-    <!-- Map Start -->
-    <div class="container-xxl pt-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container-xxl pt-5 px-0">
-            <div class="bg-dark">
-                <iframe
-                src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d1269.3172651225434!2d80.35745181698591!3d6.094487264282272!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e1!3m2!1sen!2ssg!4v1735390680741!5m2!1sen!2ssg"
-                frameborder="0" style="width: 100%; height: 450px; border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0"></iframe>
-            </div>
-        </div>
-    </div>
-    <!-- Map End -->
-
-
-    <!-- Copyright Start -->
-    <div class="container-fluid bg-dark text-white py-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom text-secondary" href="#">Sathsara Jayantha</a>, All Right Reserved.
+    <!-- Futuristic Footer Start -->
+<footer class="footer-section">
+    <!-- Footer Main Content -->
+    <div class="footer-main py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Brand Column -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="footer-brand">
+                        <a href="index.html" class="d-block mb-4">
+                            <h2 class="text-gradient-primary fw-bold m-0">Sathsara Jayantha</h2>
+                        </a>
+                        <p class="text-white-50 mb-4">Creating digital experiences that leave a lasting impression. Let's build something amazing together.</p>
+                        <div class="footer-social-links">
+                            <a href="https://x.com/SJayantha01" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://web.facebook.com/SathsaraJayantha01" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.youtube.com/@sathsarajayantha" class="social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.linkedin.com/in/sathsara-jayantha-62b814344/" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/SathsaraJayantha20" class="social-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <div class="footer-links">
+                        <a href="#home"><i class="fas fa-chevron-right me-2 footer-link-icon"></i>Home</a>
+                        <a href="#about"><i class="fas fa-chevron-right me-2 footer-link-icon"></i>About</a>
+                        <a href="#skill"><i class="fas fa-chevron-right me-2 footer-link-icon"></i>Skills</a>
+                        <a href="#service"><i class="fas fa-chevron-right me-2 footer-link-icon"></i>Services</a>
+                        <a href="#project"><i class="fas fa-chevron-right me-2 footer-link-icon"></i>Projects</a>
+                    </div>
+                </div>
+                
+                <!-- Services -->
+                <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <h5 class="footer-title">Services</h5>
+                    <div class="footer-links">
+                        <a href="#service"><i class="fas fa-chevron-right me-2 footer-link-icon"></i>UI/UX Design</a>
+                        <a href="#service"><i class="fas fa-chevron-right me-2 footer-link-icon"></i>Web Development</a>
+                        <a href="#service"><i class="fas fa-chevron-right me-2 footer-link-icon"></i>Graphic Design</a>
+                        <a href="#service"><i class="fas fa-chevron-right me-2 footer-link-icon"></i>Creative Design</a>
+                    </div>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <h5 class="footer-title">Get In Touch</h5>
+                    <div class="footer-contact-info">
+                        <div class="d-flex mb-3">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <p class="mb-0 ms-3">Yakkalamulla, Galle, Sri Lanka</p>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                            <p class="mb-0 ms-3">+94 78 950 1781</p>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <p class="mb-0 ms-3">sathsarajayantha8@gmail.com</p>
+                        </div>
+                        <div class="newsletter-form mt-4">
+                            <h6 class="text-white mb-3">Subscribe to my newsletter</h6>
+                            <form class="d-flex">
+                                <input type="email" class="form-control rounded-start rounded-0" placeholder="Enter your email">
+                                <button type="submit" class="btn btn-primary rounded-end rounded-0">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Copyright End -->
+    
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 text-white-50">© <span id="currentYear">2025</span> <a href="#" class="text-gradient-primary">Sathsara Jayantha</a>. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0 text-white-50">Designed with <i class="fas fa-heart text-danger"></i> by Sathsara Jayantha</p>
+                </div>
+            </div>
+        </div>
+        <!-- Futuristic Design Elements -->
+        <div class="footer-shape-1"></div>
+        <div class="footer-shape-2"></div>
+    </div>
+</footer>
+<!-- Futuristic Footer End -->
 
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+<!-- Back to Top -->
+<a href="#" class="btn-back-to-top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="12" y1="19" x2="12" y2="5"></line>
+        <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+</a>
 
 
     <!-- JavaScript Libraries -->
@@ -668,6 +1082,6 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script src="js/contact.js"></script>
+    <script src="js/custom-animations.js"></script>
 </body>
-
 </html>

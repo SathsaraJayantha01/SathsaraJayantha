@@ -52,7 +52,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({scrollTop: 0}, 500, 'easeInOutExpo');
         return false;
     });
     
@@ -121,6 +121,187 @@
         loop: true,
     });
 
+    // Add this to your main.js file or create a new script
+    $(document).on('click', '.portfolio-detail-btn', function(e) {
+        e.preventDefault();
+        const projectId = $(this).data('project-id');
+        
+        // Show the corresponding modal
+        $('#project-modal-' + projectId).modal('show');
+    });
     
 })(jQuery);
+
+// Navbar shrink effect on scroll
+window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    
+    if (window.scrollY > 50) {
+        navbar.classList.add('navbar-shrink');
+    } else {
+        navbar.classList.remove('navbar-shrink');
+    }
+});
+
+// Active link handling
+document.addEventListener('DOMContentLoaded', function() {
+    const sections = document.querySelectorAll('section, div[id]');
+    const navLinks = document.querySelectorAll('.navbar .nav-link');
+    
+    window.addEventListener('scroll', function() {
+        let current = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 100;
+            const sectionHeight = section.clientHeight;
+            
+            if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
+                current = section.getAttribute('id');
+            }
+        });
+        
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + current) {
+                link.classList.add('active');
+            }
+        });
+    });
+});
+
+// About section animations
+document.addEventListener('DOMContentLoaded', function() {
+    // Animate counter numbers
+    const counterNumbers = document.querySelectorAll('.counter-number');
+    
+    if (counterNumbers) {
+        counterNumbers.forEach(counter => {
+            // Already has static number displayed, no need for animation
+        });
+    }
+    
+    // Make sure floating icons appear with proper staggered delay
+    const floatingIcons = document.querySelectorAll('.floating-icon');
+    if (floatingIcons) {
+        floatingIcons.forEach((icon, index) => {
+            icon.style.animationDelay = `${index * 0.5}s`;
+        });
+    }
+});
+
+// Back to Top Button
+$(document).ready(function() {
+    // Show or hide the Back to Top button
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 300) {
+            $('.back-to-top').fadeIn('slow');
+        } else {
+            $('.back-to-top').fadeOut('slow');
+        }
+    });
+    
+    // Scroll to top when button is clicked
+    $('.back-to-top').click(function() {
+        $('html, body').animate({scrollTop: 0}, 500, 'easeInOutExpo');
+        return false;
+    });
+    
+    // Initially show the button
+    $('.back-to-top').show();
+});
+
+// Initialize modern testimonial carousel
+$(document).ready(function() {
+    $('.testimonial-carousel').owlCarousel({
+        items: 1,
+        margin: 30,
+        loop: true,
+        center: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        nav: true,
+        dots: true,
+        navText: [
+            '<i class="fa fa-angle-left"></i>',
+            '<i class="fa fa-angle-right"></i>'
+        ],
+        responsive: {
+            0: {
+                items: 1,
+                margin: 10
+            },
+            768: {
+                items: 2,
+                margin: 20
+            },
+            992: {
+                items: 3,
+                margin: 30
+            }
+        }
+    });
+});
+
+// Initialize testimonial carousel
+$(document).ready(function() {
+    $('.testimonial-carousel').owlCarousel({
+        items: 3,
+        loop: true,
+        margin: 24,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },
+            992: {
+                items: 3
+            }
+        }
+    });
+});
+
+// Modern Back to Top Button
+$(document).ready(function() {
+    // Show/hide back to top button based on scroll position
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 300) {
+            $('.btn-back-to-top').addClass('active');
+        } else {
+            $('.btn-back-to-top').removeClass('active');
+        }
+    });
+    
+    // Smooth scroll to top
+    $('.btn-back-to-top').click(function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop: 0}, 500, 'easeInOutExpo');
+    });
+});
+
+// Completely rewritten Back to Top button functionality
+$(document).ready(function() {
+    // Show/hide back to top button
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 300) {
+            $('.btn-back-to-top').fadeIn();
+        } else {
+            $('.btn-back-to-top').fadeOut();
+        }
+    });
+    
+    // Smooth scroll to top
+    $('.btn-back-to-top').click(function(event) {
+        event.preventDefault();
+        $('html, body').animate({scrollTop: 0}, 500);
+        return false;
+    });
+});
 
