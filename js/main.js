@@ -305,3 +305,73 @@ $(document).ready(function() {
     });
 });
 
+// Futuristic Navbar Effects
+document.addEventListener('DOMContentLoaded', function() {
+    // Change navbar on scroll
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.futuristic-navbar');
+        
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+    
+    // Active link handler with smooth transitions
+    const navLinks = document.querySelectorAll('.futuristic-navbar .nav-link');
+    
+    // Initially set the active link
+    setActiveNavLink();
+    
+    // Update on scroll
+    window.addEventListener('scroll', function() {
+        setActiveNavLink();
+    });
+    
+    // Function to set the active link based on scroll position
+    function setActiveNavLink() {
+        const sections = document.querySelectorAll('section, div[id]');
+        let current = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 100;
+            const sectionHeight = section.clientHeight;
+            
+            if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
+                current = section.getAttribute('id');
+            }
+        });
+        
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            const href = link.getAttribute('href');
+            if (href && href.includes(current)) {
+                link.classList.add('active');
+            }
+        });
+    }
+    
+    // Smooth scroll for navigation links
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            if (this.hash !== "") {
+                e.preventDefault();
+                
+                const hash = this.hash;
+                const targetElement = document.querySelector(hash);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Update URL without refreshing page
+                    history.pushState(null, null, hash);
+                }
+            }
+        });
+    });
+});
+

@@ -243,6 +243,360 @@
     }
 }
 
+/* Futuristic Navbar Styling */
+.futuristic-navbar {
+    background: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(15px) !important;
+    -webkit-backdrop-filter: blur(15px) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
+    padding: 15px 0 !important;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.futuristic-navbar.scrolled {
+    padding: 10px 0 !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* Left-aligned logo styling */
+.futuristic-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, var(--primary), #8063e1);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(98, 68, 197, 0.3);
+    transition: all 0.3s ease;
+}
+
+.futuristic-logo::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(135deg, var(--primary), #8063e1);
+    z-index: -1;
+    filter: blur(8px);
+    opacity: 0.7;
+}
+
+.futuristic-logo span {
+    color: white;
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: 0px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.futuristic-logo:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(98, 68, 197, 0.4);
+}
+
+/* Modern navigation links */
+.futuristic-navbar .nav-item {
+    position: relative;
+    margin: 0 3px;
+}
+
+.futuristic-navbar .nav-link {
+    padding: 8px 16px !important;
+    color: var(--dark) !important;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    letter-spacing: 0.3px;
+    position: relative;
+    transition: all 0.3s ease !important;
+    border-radius: 30px;
+}
+
+.nav-indicator {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary), #8063e1);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.futuristic-navbar .nav-link:hover .nav-indicator,
+.futuristic-navbar .nav-link.active .nav-indicator {
+    width: 60%;
+    opacity: 1;
+}
+
+.futuristic-navbar .nav-link:hover,
+.futuristic-navbar .nav-link.active {
+    color: var(--primary) !important;
+    background: rgba(98, 68, 197, 0.05);
+}
+
+/* Enhanced social buttons */
+.social-icons-container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 4px 8px;
+    border-radius: 50px;
+    backdrop-filter: blur(5px);
+    margin-left: 15px !important;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.futuristic-social-btn {
+    width: 35px;
+    height: 35px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--primary), #8063e1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white !important;
+    font-size: 14px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(98, 68, 197, 0.2);
+}
+
+.futuristic-social-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.2), rgba(255,255,255,0));
+    transition: all 0.5s ease;
+}
+
+.futuristic-social-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(98, 68, 197, 0.4);
+}
+
+.futuristic-social-btn:hover::before {
+    left: 100%;
+}
+
+/* Enhanced decorative elements */
+.nav-glow {
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    background: linear-gradient(90deg, var(--primary), #8063e1);
+    top: -20px;
+    left: 10%;
+    border-radius: 50%;
+    filter: blur(30px);
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.nav-glow-2 {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background: linear-gradient(90deg, var(--primary), #8063e1);
+    bottom: -15px;
+    right: 20%;
+    border-radius: 50%;
+    filter: blur(30px);
+    opacity: 0.07;
+    z-index: -1;
+}
+
+/* Mobile navigation */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-top: 15px;
+    }
+    
+    .futuristic-navbar .nav-link {
+        padding: 12px 15px !important;
+    }
+    
+    .social-icons-container {
+        margin: 15px 0 0 0 !important;
+        justify-content: center;
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .nav-indicator {
+        display: none;
+    }
+    
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
+/* Logo styling */
+.futuristic-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--primary), #8063e1);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(98, 68, 197, 0.3);
+}
+
+.futuristic-logo::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(135deg, var(--primary), #8063e1);
+    z-index: -1;
+    filter: blur(8px);
+    opacity: 0.7;
+}
+
+.futuristic-logo span {
+    color: white;
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: 0px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation links */
+.futuristic-navbar .nav-item {
+    position: relative;
+    margin: 0 5px;
+}
+
+.futuristic-navbar .nav-link {
+    padding: 8px 15px !important;
+    color: var(--dark) !important;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    letter-spacing: 0.2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: all 0.3s ease !important;
+}
+
+.nav-indicator {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary), #8063e1);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.futuristic-navbar .nav-link:hover .nav-indicator,
+.futuristic-navbar .nav-link.active .nav-indicator {
+    width: 60%;
+    opacity: 1;
+}
+
+.futuristic-navbar .nav-link:hover,
+.futuristic-navbar .nav-link.active {
+    color: var(--primary) !important;
+}
+
+/* Social buttons */
+.futuristic-social-btn {
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--primary), #8063e1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white !important;
+    font-size: 14px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(98, 68, 197, 0.2);
+}
+
+.futuristic-social-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.2), rgba(255,255,255,0));
+    transition: all 0.5s ease;
+}
+
+.futuristic-social-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(98, 68, 197, 0.4);
+}
+
+.futuristic-social-btn:hover::before {
+    left: 100%;
+}
+
+/* Decorative elements */
+.nav-glow {
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    background: linear-gradient(90deg, var(--primary), #8063e1);
+    top: -20px;
+    right: 20%;
+    border-radius: 50%;
+    filter: blur(30px);
+    opacity: 0.15;
+    z-index: -1;
+}
+
+/* Mobile navigation */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-top: 15px;
+    }
+    
+    .futuristic-navbar .nav-link {
+        padding: 12px 15px !important;
+    }
+    
+    .nav-indicator {
+        display: none;
+    }
+    
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
 
 /*** Header ***/
 #home {

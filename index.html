@@ -46,11 +46,13 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg fixed-top py-2 wow fadeIn" data-wow-delay="0.1s">
+    <nav class="navbar navbar-expand-lg fixed-top py-2 futuristic-navbar wow fadeIn" data-wow-delay="0.1s">
     <div class="container">
-        <!-- Mobile Logo -->
-        <a href="index.html" class="navbar-brand d-lg-none">
-            <h1 class="text-primary fw-bold m-0">SJ</h1>
+        <!-- Desktop and Mobile Logo (Left-aligned) -->
+        <a href="index.html" class="navbar-brand">
+            <div class="futuristic-logo">
+                <span>SJ</span>
+            </div>
         </a>
         
         <!-- Mobile Toggle Button -->
@@ -59,38 +61,47 @@
         </button>
         
         <!-- Navbar Items -->
-        <div class="collapse navbar-collapse justify-content-between py-3 py-lg-0" id="navbarCollapse">
-            <!-- Left Menu Items -->
-            <div class="navbar-nav ms-auto py-0">
-                <a href="#home" class="nav-item nav-link active">Home</a>
-                <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#skill" class="nav-item nav-link">Skills</a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+            <!-- Menu Items (All aligned right) -->
+            <div class="navbar-nav py-0">
+                <a href="#home" class="nav-item nav-link active">
+                    <span class="nav-text">Home</span>
+                </a>
+                <a href="#about" class="nav-item nav-link">
+                    <span class="nav-text">About</span>
+                </a>
+                <a href="#skill" class="nav-item nav-link">
+                    <span class="nav-text">Skills</span>
+                </a>
+                <a href="#service" class="nav-item nav-link">
+                    <span class="nav-text">Services</span>
+                </a>
+                <a href="#project" class="nav-item nav-link">
+                    <span class="nav-text">Projects</span>
+                </a>
+                <a href="#testimonial" class="nav-item nav-link">
+                    <span class="nav-text">Testimonial</span>
+                </a>
+                <a href="#contact" class="nav-item nav-link">
+                    <span class="nav-text">Contact</span>
+                </a>
             </div>
             
-            <!-- Desktop Logo -->
-            <!--a href="index.html" class="navbar-brand bg-gradient-primary py-2 px-4 mx-3 d-none d-lg-block rounded-pill">
-                <h1 class="text-white fw-bold m-0">Sathsara</h1>
-            </a-->
-            
-            <!-- Right Menu Items -->
-            <div class="navbar-nav me-auto py-0">
-                <a href="#service" class="nav-item nav-link">Services</a>
-                <a href="#project" class="nav-item nav-link">Projects</a>
-                <a href="#testimonial" class="nav-item nav-link">Testimonial</a>
-                <a href="#contact" class="nav-item nav-link">Contact</a>
-            </div>
-            
-            <!-- Social Icons (Visible only on desktop) -->
-            <div class="d-none d-xl-flex align-items-center ms-4">
-                <a href="https://web.facebook.com/SathsaraJayantha01" class="btn btn-sm btn-primary btn-icon rounded-circle me-2">
+            <!-- Social Icons -->
+            <div class="d-flex align-items-center ms-4 social-icons-container">
+                <a href="https://web.facebook.com/SathsaraJayantha01" class="futuristic-social-btn me-2">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="https://github.com/SathsaraJayantha20" class="btn btn-sm btn-primary btn-icon rounded-circle">
+                <a href="https://github.com/SathsaraJayantha20" class="futuristic-social-btn">
                     <i class="fab fa-github"></i>
                 </a>
             </div>
         </div>
     </div>
+    
+    <!-- Decorative Elements -->
+    <div class="nav-glow"></div>
+    <div class="nav-glow-2"></div>
 </nav>
 <!-- Navbar End -->
 
@@ -285,42 +296,42 @@
                     <div class="skills-container">
                         <div class="skill-badge">
                             <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML" />
-                            <span>HTML/CSS 95%</span>
+                            <span>HTML/CSS</span>
                         </div>
     
                         <div class="skill-badge">
                             <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript" />
-                            <span>JavaScript 85%</span>
+                            <span>JavaScript</span>
                         </div>
     
                         <div class="skill-badge">
                             <img src="https://cdn-icons-png.flaticon.com/512/919/919830.png" alt="PHP" />
-                            <span>PHP 75%</span>
+                            <span>PHP</span>
                         </div>
     
                         <div class="skill-badge">
                             <img src="https://cdn-icons-png.flaticon.com/512/5968/5968520.png" alt="Photoshop" />
-                            <span>Photoshop 90%</span>
+                            <span>Photoshop</span>
                         </div>
     
                         <div class="skill-badge">
                             <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="Figma" />
-                            <span>Figma 85%</span>
+                            <span>Figma</span>
                         </div>
     
                         <div class="skill-badge">
                             <img src="https://cdn-icons-png.flaticon.com/512/174/174881.png" alt="WordPress" />
-                            <span>WordPress 80%</span>
+                            <span>WordPress</span>
                         </div>
     
                         <div class="skill-badge">
                             <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python" />
-                            <span>Python 85%</span>
+                            <span>Python</span>
                         </div>
     
                         <div class="skill-badge">
                             <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C#" />
-                            <span>C# 80%</span>
+                            <span>C#</span>
                         </div>
                     </div>
                 </div>
@@ -340,7 +351,7 @@
                             <div class="col-sm-6">
                                 <h5>UI Designer, Web Designer, Social Media Post Designer</h5>
                                 <hr class="text-primary my-2">
-                                <p class="text-primary mb-1">2024-Present</p>
+                                <p class="text-primary mb-1">2025-Present</p>
                                 <a class="mb-0" href="https://Qlony.co" style="font-weight: bold; color: black;">Qlony.co</a>
                             </div>
                         </div>
@@ -363,7 +374,7 @@
                                 <h5>Level 03 Diploma in Information Technology (UK Certification)</h5>
                                 <hr class="text-primary my-2">
                                 <p class="text-primary mb-1">2024-Full year</p>
-                                <h6 class="mb-0">Esoft Metro Campus Sri Lanka</h6>
+                                <h6 class="mb-0">Esoft Metro Campus Sri Lanka</h>
                             </div>
                             <div class="col-sm-6">
                                 <h5>General Certificate of Education Ordinary Level & General Certificate of Education Advanced Level</h5>
@@ -407,7 +418,7 @@
                     </div>
                     <h4 class="mb-3">Creative Design</h4>
                     <div class="service-price mb-4">
-                        <span class="price-tag">Starting at <strong>$5</strong></span>
+                        <span class="price-tag">Starting at <strong>$20</strong></span>
                     </div>
                     <p class="mb-4">We craft innovative and visually striking designs tailored to your brand identity, ensuring a unique and professional aesthetic.</p>
                     <div class="service-features mb-4">
@@ -429,7 +440,7 @@
                     </div>
                     <h4 class="mb-3">Graphic Design</h4>
                     <div class="service-price mb-4">
-                        <span class="price-tag">Starting at <strong>$5</strong></span>
+                        <span class="price-tag">Starting at <strong>$18</strong></span>
                     </div>
                     <p class="mb-4">Specializing in eye-catching visuals, we create everything from logos to marketing materials, delivering high-quality graphic solutions.</p>
                     <div class="service-features mb-4">
@@ -451,7 +462,7 @@
                     </div>
                     <h4 class="mb-3">Web Design</h4>
                     <div class="service-price mb-4">
-                        <span class="price-tag">Starting at <strong>$5</strong></span>
+                        <span class="price-tag">Starting at <strong>$100</strong></span>
                     </div>
                     <p class="mb-4">Modern, responsive websites designed for seamless user experience and aesthetic appeal, optimized for all devices.</p>
                     <div class="service-features mb-4">
@@ -473,7 +484,7 @@
                     </div>
                     <h4 class="mb-3">UI/UX Design</h4>
                     <div class="service-price mb-4">
-                        <span class="price-tag">Starting at <strong>$5</strong></span>
+                        <span class="price-tag">Starting at <strong>$120</strong></span>
                     </div>
                     <p class="mb-4">Intuitive and user-centered design solutions focused on enhancing user interaction and satisfaction with your digital products.</p>
                     <div class="service-features mb-4">
@@ -901,7 +912,7 @@
                             <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
                             <span class="social-name">Facebook</span>
                         </a>
-                        <a class="social-link youtube" href="https://www.youtube.com/@sathsarajayantha">
+                        <a class="social-link youtube" href="https://www.youtube.com/@SathsaraJayantha1">
                             <span class="social-icon"><i class="fab fa-youtube"></i></span>
                             <span class="social-name">YouTube</span>
                         </a>
@@ -978,7 +989,7 @@
                         <div class="footer-social-links">
                             <a href="https://x.com/SJayantha01" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                             <a href="https://web.facebook.com/SathsaraJayantha01" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://www.youtube.com/@sathsarajayantha" class="social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.youtube.com/@SathsaraJayantha1" class="social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                             <a href="https://www.linkedin.com/in/sathsara-jayantha-62b814344/" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                             <a href="https://github.com/SathsaraJayantha20" class="social-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
                         </div>
