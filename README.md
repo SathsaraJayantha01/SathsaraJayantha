@@ -29,3 +29,18 @@ You can view the live site here:
 [https://SathsaraJayantha01.github.io/SathsaraJayantha](https://SathsaraJayantha01.github.io/SathsaraJayantha)
 
 ---
+
+##📈 Future Improvements
+-Add blog section to share knowledge
+-Implement animations for enhanced UI/UX
+-Add backend for contact form
+-Optimize for SEO
+
+##👨‍💻 Author
+-Sathsara Jayantha
+-🔗 GitHub: @SathsaraJayantha01
+
+---
+
+##📜 License
+-This project is open source and available under the MIT License.
